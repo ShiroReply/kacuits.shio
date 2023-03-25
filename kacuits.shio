@@ -12,14 +12,14 @@ Library:Notify('Loading UI...');
 wait(3)
 ------------------------------------ WINDOW -----------------------------------
 local Window = Library:CreateWindow({
-    Title = 'pepsi.club',
+    Title = 'kacuits.shio',
     Center = true, 
     AutoShow = true,
 })
 ------------------------------------ TABS ------------------------------------
 local Tabs = {
-    Legitbot = Window:AddTab('Aimbot'), 
-    Visuals = Window:AddTab('Visuals'),
+    Legitbot = Window:AddTab('kacsbot'), 
+    Visuals = Window:AddTab('visuals'),
     Misc = Window:AddTab('Misc'),
     ['UI Settings'] = Window:AddTab('Settings'),
 }
@@ -187,7 +187,7 @@ Text.Position = UDim2.new(0.0230768919, 0, 0, 0)
 Text.Size = UDim2.new(0.48046875, 0, 1, 0)
 Text.ZIndex = 4
 Text.Font = Enum.Font.RobotoMono
-Text.Text = "pepsi.club | user"
+Text.Text = "kacuits.shio | user"
 Text.TextColor3 = C3(65025, 65025, 65025)
 Text.TextSize = 14.000
 Text.TextStrokeTransparency = 0.000
