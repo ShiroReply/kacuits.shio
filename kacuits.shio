@@ -1436,8 +1436,8 @@ SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({ 'MenuKeybind' }) 
 
-ThemeManager:SetFolder('pepsi.club')
-SaveManager:SetFolder('pepsi.club/main')
+ThemeManager:SetFolder('kacuits.shio')
+SaveManager:SetFolder('kacuits.shio/main')
 
 SaveManager:BuildConfigSection(Tabs['UI Settings']) 
 
@@ -1445,7 +1445,7 @@ ThemeManager:ApplyToTab(Tabs['UI Settings'])
 
 local OthersSettings = Tabs['UI Settings']:AddRightGroupbox('Others')
 
-OthersSettings:AddInput('uinamechange', {Default = 'pepsi.club', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
+OthersSettings:AddInput('uinamechange', {Default = 'kacuits.shio', Numeric = false, Finished = false, Text = 'Window Title', Tooltip = 'Changes window title', Placeholder = '. . .'})
 Options.uinamechange:OnChanged(function()
     Window:SetWindowTitle(Options.uinamechange.Value)
 end)
@@ -2214,7 +2214,7 @@ function Movement()
                     if Toggles.mov_edgebugchat.Value == true then
                         getsenv(localPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).moveOldMessages()
                         getsenv(localPlayer.PlayerGui.GUI.Main.Chats.DisplayChat).createNewMessage(
-                            "pepsi.club",
+                            "kacuits.shio",
                             "edgebugged",
                             C3(2, 103, 172), 
                             Color3.new(1,1,1),
@@ -2317,5 +2317,5 @@ runService.RenderStepped:Connect(function()
     do Misc() end
 end)
 
-Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to pepsi.club!');
+Library:Notify('Finished Loading! Welcome ' ..localPlayer.Name.. ' to kacuits.shio!');
 Library:Notify("Took to load "..string.format("%.5f", tick() - LoadingTime).." seconds.");
